@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Setting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CountdownLen>300</CountdownLen>
+  <DefaultLocation>1</DefaultLocation>
+  <PresentationList>
+    <Presentation>
+      <Path>C:\Users\chen__000\Documents\Leetcode 53.pptx</Path>
+      <Hour>0</Hour>
+      <Minute>5</Minute>
+      <Second>0</Second>
+    </Presentation>
+  </PresentationList>
+</Setting>

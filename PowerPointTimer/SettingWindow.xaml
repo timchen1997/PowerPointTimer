@@ -1,0 +1,27 @@
+﻿<Window x:Class="PowerPointTimer.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
+        xmlns:local="clr-namespace:PowerPointTimer"
+        mc:Ignorable="d"
+        Title="Settings" Height="300" Width="300" WindowStartupLocation="CenterScreen" Closed="SettingWindow_Closed" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="label" Content="Settings" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="32"/>
+        <Label x:Name="label1" Content="Countdown length" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="hour" HorizontalAlignment="Left" Height="23" Margin="144,66,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="21" input:InputMethod.IsInputMethodEnabled="False" PreviewTextInput="NumberFilter" TextChanged="NumberLimiter"/>
+        <Label x:Name="label1_Copy" Content=":" HorizontalAlignment="Left" Margin="165,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="minute" HorizontalAlignment="Left" Height="23" Margin="178,66,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="21" input:InputMethod.IsInputMethodEnabled="False" PreviewTextInput="NumberFilter" TextChanged="NumberLimiter"/>
+        <Label x:Name="label1_Copy1" Content=":" HorizontalAlignment="Left" Margin="199,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="second" HorizontalAlignment="Left" Height="23" Margin="212,66,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="21" input:InputMethod.IsInputMethodEnabled="False" PreviewTextInput="NumberFilter" TextChanged="NumberLimiter"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="207,240,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="label1_Copy2" Content="Default location" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="144,100,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <ComboBoxItem Content="Topleft"/>
+            <ComboBoxItem Content="Topright"/>
+        </ComboBox>
+        <Button x:Name="btnSpecific" Content="Set up different length for specific files" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="272" Click="btnSpecific_Click"/>
+
+    </Grid>
+</Window>
